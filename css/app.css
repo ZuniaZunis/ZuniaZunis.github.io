@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+/* ==========================================================================
+PONIŻEJ STYLE DLA EKRANÓW MOBILNYCH (i w górę): dziedziczą się na wszystkie ekrany, chyba że nastąpi zmiana.
+========================================================================== */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Trocchi', serif;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 31%;
+}
+
+/**** KLASY UNIWERSALNE ***/
+.gora {
+    margin-top: 18vh;
+}
+
+.dol {
+    margin-top: 14vh;
+}
+
+.obrazek_margin {
+    margin-bottom: 5vh;
+}
+
+.prawy__tekst {
+    text-align: right;
+}
+
+.pelna-wysokosc {
+    min-height: 100vh;
+}
+
+.tekst-ciagly {
+    font-size: 13px;
+    color: #FF7900;
+    text-transform: uppercase;
+    margin-bottom: 1vh;
+}
+
+.naglowek {
+    font-size: 22px;
+    color: white;
+    letter-spacing: 31%;
+}
+
+.numbers {
+    white-space: nowrap;
+}
+
+/********************
+******** OKLADKA ******
+********************/
+
+.okladka__naglowek {
+    color: white;
+    font-size: 26px;
+    letter-spacing: 40%;
+}
+
+.okladka__napis_kolor {
+    color: #FF7900;
+}
+
+.okladka__tekst-wrapper {
+    z-index: 100;
+    display: flex;
+    margin: 18%;
+}
+
+.okladka__animacja_poziom {
+    display: none;
+}
+
+.okladka__animacja_pion {
+    display: block;
+    width: 100vw;
+    display: block;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+/*///////////////////////
+
+
+///////KOLO///////////*/
+
+#kolo {
+    overflow: hidden;
+    max-height: 100vh;
+    position: relative;
+}
+
+#kolo_obraz {
+    width: 100vw;
+    height: 100vh;
+    max-width: 200vw;
+    margin-left: 200px;
+    position: absolute;
+    top: 0;
+
+}
+
+.kolo_obraz2 {
+    height: 100vh;
+    margin-left: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: center right;
+}
+
+.male {
+    display: block;
+}
+
+.duze {
+    display: none;
+}
+
+.naglowki-wrapper {
+    display: flex;
+    align-items: center;
+
+}
+
+
+/*///////////////////////
+
+
+///////SHARK///////////*/
+.shark__tekst {
+    text-align: right;
+}
+
+/*///////////////////////
+///////conjoined///////////*/
+.conjoined-obrazek {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+/*///////////////////////
+///////satan///////////*/
+#canvas1 {
+    margin-top: 5vh;
+    margin-bottom: 8vh;
+}
+
+/*///////////////////////
+///////millionaire/////*/
+.tekst-ciagly-nadpis {
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 13px;
+    color: #FF7900;
+    text-transform: uppercase;
+}
+
+.millionaire__animacja {
+    margin-top: 5vh;
+    margin-bottom: 8vh;
+}
+
+/*///////////////////////
+///////happylife/////*/
+.happylife {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/*///////////////////////
+///////koncowka/////*/
+.czerwony {
+    color: #FF0000;
+}
+
+.naglowek_nadpis {
+    font-size: 29px;
+}
+
+.koncowka-tekst-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.koncowka__naglowek {
+    margin-left: 2vw;
+}
+
+.koncowka-wrapper {
+    position: relative;
+}
+
+.red_kulka__koncowka {
+    position: absolute;
+    top: 0px;
+    width: 63vw;
+}
+
+.orange_kulka__koncowka {
+    width: 60vw;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+
+.dogbite_obraz {
+    margin-bottom: 8vh;
+}
+
+/* ==========================================================================
+PONIŻEJ ZMIANY DLA TABLETÓW: ŚREDNIE EKRANY (i w górę) – dziedziczą się na wszystkie ekrany powyżej 768px, chyba że nastąpi zmiana.
+========================================================================== */
+@media only screen and (min-width: 768px) {
+
+    /**** KLASY UNIWERSALNE ***/
+    .gora {
+        margin-top: 7vh;
+    }
+
+    .dol {
+        margin-top: 10vh;
+    }
+
+    .obrazek_margin {
+        margin-bottom: 5vh;
+
+    }
+
+    .tekst-ciagly {
+        font-size: 19px;
+        color: #FF7900;
+        text-transform: uppercase;
+    }
+
+    .naglowek {
+        font-size: 42px;
+        color: white;
+    }
+
+    /********************
+******** OKLADKA ******
+********************/
+
+    .okladka__naglowek {
+        color: white;
+        font-size: 64px;
+        letter-spacing: 40%;
+    }
+
+    .okladka__tekst-wrapper {
+        display: flex;
+        margin: 25% 0 0 0;
+        justify-content: center;
+    }
+
+    .conjoined-obrazek {
+        margin-top: 0vh;
+        margin-bottom: 0vh;
+    }
+
+    .okladka__animacja_poziom {
+        display: none;
+    }
+
+    .okladka__animacja_pion {
+        display: block;
+        width: 100vw;
+        object-fit: cover;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+    }
+
+    /*///////////////////////
+///////millionaire//*/
+    .tekst-ciagly-nadpis {
+        font-family: 'Josefin Sans', sans-serif;
+        line-height: 1.5;
+        font-weight: 400;
+        font-size: 19px;
+        color: #FF7900;
+        text-transform: uppercase;
+    }
+
+    /*///////////////////////
+///////satan/////*/
+    #canvas1 {
+        margin-top: 5vh;
+        margin-bottom: 8vh;
+
+    }
+
+    /*//////////////////////////////////////////////////////////////////////////////
+///////HAPPYLIFE/////////////////////////////////////*/
+    .happylife {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 9%;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////////////
+///////koncowka/////////////////////////////////////*/
+
+    .czerwony {
+        color: #FF0000;
+    }
+
+    .koncowka-tekst-wrapper {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .koncowka__naglowek {
+        margin-left: 4vw;
+    }
+
+    .koncowka-wrapper {
+        position: relative;
+    }
+
+    .red_kulka__koncowka {
+        position: absolute;
+        top: 0px;
+        width: 37vw;
+    }
+
+    .orange_kulka__koncowka {
+        width: 36vw;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+
+
+
+
+
+    /*zamknięcie MEDIUM*/
+}
+
+/* <-- nie kasować tej klamerki*/
+
+
+/* ==========================================================================
+PONIŻEJ ZMIANY DLA DESKTOP: DUŻE EKRANY (i w górę) – powyżej 1200px
+========================================================================== */
+@media only screen and (min-width: 1200px) {
+
+    .gora {
+        margin-top: 10vh;
+    }
+
+    .dol {
+        margin-top: 15vh;
+    }
+
+    .obrazek_margin {
+        margin-bottom: 5vh;
+
+    }
+
+    /********************
+    ******** OKLADKA ******
+    ********************/
+
+    .okladka__naglowek {
+        color: white;
+        font-size: 60px;
+        letter-spacing: 40%;
+    }
+
+    .okladka__tekst-wrapper {
+        height: 50vh;
+        display: flex;
+        margin: 14%;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+
+    .dogbite_obraz {
+        margin-bottom: 5vh;
+    }
+
+    .okladka__animacja_poziom {
+        width: 100vw;
+        display: block;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+    }
+
+    .okladka__animacja_pion {
+        display: none;
+    }
+
+
+    /*//////////////////////////////////////////////////////////////////////////////
+///////satan//////////////////*/
+    #canvas1 {
+        margin-top: 5vh;
+        margin-bottom: 0vh;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////////////
+///////millionaire//////////////////*/
+
+    .tekst-ciagly-nadpis {
+        font-family: 'Josefin Sans', sans-serif;
+        line-height: 1.5;
+        font-weight: 400;
+        font-size: 20px;
+        color: #FF7900;
+        text-transform: uppercase;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////////////
+///////HAPPYLIFE/////////////////////////////////////*/
+    .happylife {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin: 14%;
+        min-height: 60vh;
+
+    }
+
+    /*//////////////////////////////////////////////////////////////////////////////
+///////koncowka/////////////////////////////////////*/
+
+    .koncowka__naglowek {
+        margin-left: 30vw;
+        align-self: center,
+    }
+
+    .koncowka-wrapper {
+        position: relative;
+    }
+
+    .red_kulka__koncowka {
+        position: absolute;
+        top: 0px;
+        width: 26vw;
+    }
+
+    .orange_kulka__koncowka {
+        width: 25vw;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+
+
+
+    /*zamknięcie LARGE*/
+}
+
+/* <-- nie kasować tej klamerki*/
